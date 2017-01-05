@@ -1,0 +1,23 @@
+{
+  "name": "step-by-step-async-javascript-with-rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean" : "rimraf out",
+    "build": "babel -d out src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4",
+    "debug": "^2.5.1",
+    "eslint": "^3.12.2",
+    "rimraf": "^2.5.4",
+    "rxjs": "^5.0.2",
+    "webpack": "^1.14.0"
+  }
+}

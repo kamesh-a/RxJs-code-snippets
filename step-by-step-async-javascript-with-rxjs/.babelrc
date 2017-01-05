@@ -1,0 +1,26 @@
+/* 
+	http://babeljs.io/docs/plugins/preset-env 
+	It acts similar to babel-preset-latest but with 
+	extra options to specify target and compiling
+	module formats.
+
+	API Options : https://babeljs.io/docs/usage/api/
+*/
+
+{
+	"presets":[
+		["env",{
+			"targets": {
+        		"node":"current"
+      		},
+      		"modules":"commonjs", /* Modules=false, will not convert modules into commonjs format */
+      		"loose":true
+		}]
+	],
+	// "compact":true,
+	"minified":true,
+	"comments":false,
+	"sourceMaps" : "inline",
+	"ast":true
+}
+
