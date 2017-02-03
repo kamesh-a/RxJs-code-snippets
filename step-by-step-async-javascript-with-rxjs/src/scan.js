@@ -5,8 +5,9 @@ import {Observable} from 'rxjs/Rx';
 
 
 Observable.interval(200)
-	.scan((acc) => {
-		return acc + 1
+	.scan((acc,i) => {
+		console.log('i : ',i)
+		return ( acc * 2 ) + 1
 	},0)
 	.take(10)
 	.subscribe( 
