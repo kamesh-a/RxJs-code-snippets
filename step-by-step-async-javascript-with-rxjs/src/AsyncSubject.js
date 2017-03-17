@@ -5,7 +5,7 @@ Async subject is one of the variants of the subjects.
 ReplaySubject     replay before or after completion
 BehaviorSubject   replay one data before completion
 AsyncSubject      replay one data after completion 
-( similar to `last` but it has the capability to remember past data).
+( similar to `last` but it has the capability to remember past data ).
 
 Can be used to remember CPU intensive computed data.
 

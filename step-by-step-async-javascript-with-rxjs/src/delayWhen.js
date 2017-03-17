@@ -16,7 +16,8 @@ import {Observable} from 'rxjs/Rx';
 							   (200ms)						 (2000s)
 
 */
-Observable.from('LEARNING FOR LIFE'.split(''))
+Observable
+	.from('LEARNING FOR LIFE'.split(''))
 	.delayWhen( x => {
 		return x == 'L' ? Observable.interval(2000) : Observable.interval(200)
 	})

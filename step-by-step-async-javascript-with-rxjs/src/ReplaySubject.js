@@ -31,6 +31,9 @@ source.subscribe(replay);
 let observerOne = {
 	next(r){
 		console.log(`one : ${r}`)
+	},
+	complete(){
+		console.log(`Observer complete`)
 	}
 };
 
@@ -45,4 +48,4 @@ replay.subscribe(observerOne)
 
 setTimeout(function(){
 	replay.subscribe(observerTwo)	
-},1000)
+},3000)

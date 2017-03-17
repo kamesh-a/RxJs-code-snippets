@@ -1,4 +1,11 @@
-// combine two streams together to get the latest values.
+/* combine two streams together to get the latest values. 
+
+
+	Vertical Combination operators.
+	zip,combineLatest,withLatestFrom = AND type
+	merge = OR type
+	
+*/
 
 import {Observable} from 'rxjs/Rx';
 
