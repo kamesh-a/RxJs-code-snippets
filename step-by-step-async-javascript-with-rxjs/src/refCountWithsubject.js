@@ -3,7 +3,7 @@ import * as Rx from 'rxjs/Rx';
 let shared = Rx.Observable
 				.interval(1000)
 				.take(10)
-				.do( index => console.log(' do fn => '+index) )
+				// .do( index => console.log(' do fn => '+index) )
 				.multicast(new Rx.Subject())
 				.refCount()
 // shared.connect();

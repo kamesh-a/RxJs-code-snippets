@@ -1,18 +1,20 @@
 /*
 	
-	Buffer is horizontal combination operator
-	similar to scan.
+	Horizontal combination operator
+	Buffer,scan,reduce
+	scan - each item without compelete event
+	reduce - each item AFTER compelete event
 
 	Vertical Combination operators.
-	zip,combineLatest,withLatestFrom = AND type
-	merge = OR type
+	[AND-Type] = zip,combineLatest,withLatestFrom.
+	[OR-Type] = merge.
 
 
-	Buffer
-	BufferCount
-	BufferTime
-	BufferWhen
-	BufferToggle
+	Buffer < closing(observer,subscriber,promise)>
+	BufferCount <number>
+	BufferTime <timeInMilliseconds>
+	BufferWhen< close(function:observable/subscriber/promise) > function you have give collects -> close -> repeat
+	BufferToggle< start(observer,subscriber,promise) , close(function:observable/subscriber/promise) >
 
 */
 

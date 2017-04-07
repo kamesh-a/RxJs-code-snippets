@@ -30,7 +30,7 @@ import Rx from 'rx';
 let steam = Rx.Observable
 				.interval(1000)
 				.take(25)
-				.do( index => logger.debug(' do fn => '+index) );
+				// .do( index => logger.debug(' do fn => '+index) );
 
 let publish  = steam.publish().refCount();
 // publish.connect();

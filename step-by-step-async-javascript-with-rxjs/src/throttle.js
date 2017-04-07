@@ -5,7 +5,7 @@ let source = new Subject();
 setTimeout( () => source.next(1),100);
 
 Observable.from(source)
-	.throttle(() => Observable.interval(1000))
+	.throttle(() => Observable.interval(500))
 	.subscribe(x => console.log(x));
 
 
